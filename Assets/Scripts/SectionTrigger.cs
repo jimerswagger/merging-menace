@@ -12,7 +12,7 @@ public class SectionTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Trigger"))
         {
-            Instantiate(road, new Vector3(0, 0, 12), Quaternion.identity); //make object out of the 'road' prefab
+            Instantiate(road, new Vector3(0, 0, 7.4f), Quaternion.identity); //make object out of the 'road' prefab
             //at this new Vector, new position in 3D space, Quaternion.identity here means no rotation.
         }
     }
