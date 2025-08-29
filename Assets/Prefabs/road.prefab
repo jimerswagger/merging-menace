@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 103621169199148166}
   m_Layer: 0
   m_Name: invisible-trigger
-  m_TagString: Untagged
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,8 +51,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.692435, y: 3.3059194, z: 1}
-  m_Center: {x: 0.26594615, y: -0.24562323, z: 0}
+  m_Size: {x: 5.692435, y: 3.3059194, z: 0.21340561}
+  m_Center: {x: 0.26594615, y: -0.24562323, z: 0.3932972}
 --- !u!1 &3538495211235317502
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 7400686016587896583}
   m_Layer: 0
   m_Name: road
-  m_TagString: Trigger
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
