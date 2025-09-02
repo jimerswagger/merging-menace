@@ -6,7 +6,7 @@ using UnityEngine;
 public class SectionTrigger : MonoBehaviour
 {
 
-    public GameObject highway; //the highway prefab
+    public GameObject highway;
 
     private void OnTriggerEnter(Collider other)
     {
