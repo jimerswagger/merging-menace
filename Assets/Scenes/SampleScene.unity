@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 1052754627}
   - component: {fileID: 1052754626}
   m_Layer: 0
-  m_Name: DestroyBarrier
+  m_Name: destroy-barrier
   m_TagString: Destroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,8 +499,10 @@ GameObject:
   - component: {fileID: 1651913950}
   - component: {fileID: 1651913951}
   - component: {fileID: 1651913952}
+  - component: {fileID: 1651913953}
+  - component: {fileID: 1651913954}
   m_Layer: 0
-  m_Name: player-car
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,6 +640,57 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.3445971
   m_Center: {x: 0.10370975, y: -0.2887554, z: 0}
+--- !u!114 &1651913953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651913945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1651913954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651913945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bc432e5e6d748a9970d6ad68ececad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  moveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d78b4ab2-4e74-478c-866b-08c30a455c47
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!1001 &1416558566380313296
 PrefabInstance:
   m_ObjectHideFlags: 0
