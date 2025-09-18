@@ -1,35 +1,44 @@
 using Unity.VisualScripting;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
 
-    public Rigidbody rb;
+    public int speed = 5;
 
-    public float moveSpeed;
+    public PlayerInput playerInput;
 
-    private Vector3 _moveDir;
+    public InputAction moveAction;
 
-    public InputAction moveAction; //not sure if its storing 
-                                   // the current key that has an action within the larger action of 'move'
+    // public float moveSpeed;
+
+    // private Vector3 _moveDir;
+
 
     //InputAction jumpAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        playerInput = GetComponent<PlayerInput>();
+        moveAction = playerInput.actions.FindAction("Move");
     }
 
     // Update is called once per frame
     void Update()
     {
-        _moveDir = InputSystem.actions.FindAction("Move").ReadValue<Vector3>(); //like getcomponent
+        MovePlayer();
     }
 
-    private void FixedUpdate()
+    void MovePlayer()
     {
-        rb.velocity = new Vector3(_moveDir * moveSpeed, _moveDir * moveSpeed, _moveDir * moveSpeed);
+        Debug.Log(moveAction.ReadValue<Vector2>());
+
+        Vector2 direction = moveAction.ReadValue<Vector2>();
+        transform.position += new Vector3(direction.x, 0, direction.y) * speed * Time.deltaTime;
+
     }
 }
