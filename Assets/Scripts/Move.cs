@@ -5,13 +5,24 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
 
-    private int accelerating_speed;
+    public int accelerating_speed;
+
+    public playerMovement player;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
         accelerating_speed = -10; //smaller negative numbers make road go faster
+    }
+
+    void goFaster()
+    {
+        if (player.playerUp)
+        {
+            accelerating_speed -= 10;
+        }
     }
 
     // Update is called once per frame
@@ -24,7 +35,7 @@ public class Move : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Destroy"))
         {
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
 }
