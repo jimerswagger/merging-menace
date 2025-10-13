@@ -13,12 +13,7 @@ public class playerMovement : MonoBehaviour
 
     public InputAction moveAction;
 
-    //public Move road;
 
-    public bool playerUp; //is player moving up
-
-
-    //InputAction jumpAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,19 +35,8 @@ public class playerMovement : MonoBehaviour
         Vector2 direction = moveAction.ReadValue<Vector2>();
         transform.position += new Vector3(direction.x, 0, direction.y) * speed * Time.deltaTime;
 
-
-        if (direction == Vector2.up)
-        {
-            playerUp = true;
-            //road.accelerating_speed -= 20;
-        }
-
-        else
-        {
-            playerUp = false;
-        }
         //if the player is accelerating forwards
-        //then do road.accelerating_speed += speed or something
+        //then have road.accelerating_speed += 10 to make procedural generation faster
 
     }
 }

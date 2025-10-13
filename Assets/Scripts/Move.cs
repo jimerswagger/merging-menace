@@ -9,20 +9,10 @@ public class Move : MonoBehaviour
 
     public playerMovement player;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
         accelerating_speed = -10; //smaller negative numbers make road go faster
-    }
-
-    void goFaster()
-    {
-        if (player.playerUp)
-        {
-            accelerating_speed -= 10;
-        }
     }
 
     // Update is called once per frame
