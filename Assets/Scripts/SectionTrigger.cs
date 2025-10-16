@@ -9,7 +9,7 @@ public class SectionTrigger : MonoBehaviour
 
     public GameObject highway;
 
-    public GameObject spawnNewRoadHere; //invisible box
+    private GameObject spawnNewRoadHere;
 
     void Start()
     {
@@ -20,11 +20,10 @@ public class SectionTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Trigger"))
         {
-            //if (player moving up, then instantiate at a different z value)
+            // Generate Highway at Invisible Game Object
             Instantiate(highway, spawnNewRoadHere.transform.position, Quaternion.identity);
             Debug.Log("Spawned at: " + spawnNewRoadHere.transform.position);
-            //make an invisible game object that is right at the edge of the road, 
-            // so you can instantiate a prefab at the position of that invisible object.
+            
         }
     }
 

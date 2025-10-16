@@ -224,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 174263942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6000004, y: -2.8, z: 18.4}
+  m_LocalPosition: {x: 1.35, y: -2.8, z: 18.4}
   m_LocalScale: {x: 0.8888889, y: 1, z: 0.38330498}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -684,7 +684,7 @@ Transform:
   m_GameObject: {fileID: 1651913945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3, y: 3.3, z: -3.54}
+  m_LocalPosition: {x: -1.4, y: 3.3, z: -4}
   m_LocalScale: {x: 1.125, y: 1, z: 2.6088886}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -704,7 +704,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   highway: {fileID: 3438298115677433201, guid: 5ff9007a6f70348e08ec398545d0ae5a, type: 3}
-  spawnNewRoadHere: {fileID: 0}
 --- !u!54 &1651913951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -796,7 +795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 5
-  playerInput: {fileID: 0}
   moveAction:
     m_Name: Move
     m_Type: 0
