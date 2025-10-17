@@ -50,8 +50,7 @@ public class playerMovement : MonoBehaviour
         else if (direction.y > 0) //if moving up, figure out how to expand condition so it also considers left-up, right-up inputs
         {
             //make road generate faster
-            //moveObject.accelerating_speed -= 5;
-            Move.accelerating_speed = -15;
+            //Move.accelerating_speed = -15;
             transform.position += new Vector3(direction.x, 0, direction.y - 0.5f) * speed * Time.deltaTime;
         }
 
@@ -64,10 +63,5 @@ public class playerMovement : MonoBehaviour
         {
             transform.position += new Vector3(direction.x, 0, direction.y) * speed * Time.deltaTime;
         }
-
-
-        //if the player is accelerating forwards
-        //then have road.accelerating_speed += 10 to make procedural generation faster
-
     }
 }

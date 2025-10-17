@@ -12,10 +12,9 @@ public class Move : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
-        accelerating_speed = -12; //smaller negative numbers make road go faster
+        accelerating_speed = -15; //smaller negative numbers make road go faster
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += new Vector3(0, 0, accelerating_speed) * Time.deltaTime;
