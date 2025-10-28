@@ -47,10 +47,8 @@ public class playerMovement : MonoBehaviour
             transform.position += new Vector3(direction.x - 1, 0, direction.y) * speed * Time.deltaTime; //sharp left movement
         }
 
-        else if (direction.y > 0) //if moving up, figure out how to expand condition so it also considers left-up, right-up inputs
+        else if (direction.y > 0) //if moving up
         {
-            //make road generate faster
-            //Move.accelerating_speed = -15;
             transform.position += new Vector3(direction.x, 0, direction.y - 0.5f) * speed * Time.deltaTime;
         }
 
