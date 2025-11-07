@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 174263945}
   - component: {fileID: 174263944}
   - component: {fileID: 174263943}
+  - component: {fileID: 174263947}
   m_Layer: 0
   m_Name: SpawnPos
   m_TagString: Spawn
@@ -224,12 +225,26 @@ Transform:
   m_GameObject: {fileID: 174263942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.35, y: -2.8, z: 19}
-  m_LocalScale: {x: 0.8888889, y: 1, z: 0.38330498}
+  m_LocalPosition: {x: 0.118750095, y: -1.15, z: 45.568886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1651913949}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174263947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174263942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d427e3ff0138419ab25c0ab950310a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FixedFollower
+  player: {fileID: 1651913949}
+  offset: {x: 0, y: 0, z: 50}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +509,52 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &666228111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 666228113}
+  - component: {fileID: 666228114}
+  m_Layer: 0
+  m_Name: slow-car-spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &666228113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666228111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &666228114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666228111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4187613dc8a604d0fb3697ab52c6ae03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::slowSpawner
+  enemycarprefab: {fileID: 3438276688916871298, guid: 5f286b36592c84355bf0444099a9ba43, type: 3}
+  enemyinterval: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +657,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1153838519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153838520}
+  - component: {fileID: 1153838521}
+  m_Layer: 0
+  m_Name: fast-car-spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153838520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153838519}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1153838521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153838519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9beb6fa40d554adaae9de561a1c9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  enemycarprefab: {fileID: 6955489142747762041, guid: 363af458a161442b49eccea59d973cfe, type: 3}
+  enemyinterval: 3.5
 --- !u!1 &1651913945
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,8 +794,7 @@ Transform:
   m_LocalPosition: {x: -1.4, y: 1.65, z: -4}
   m_LocalScale: {x: 1.125, y: 1, z: 2.6088886}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 174263946}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1651913950
@@ -713,8 +819,8 @@ Rigidbody:
   m_GameObject: {fileID: 1651913945}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_LinearDamping: 0.5
+  m_AngularDamping: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -726,7 +832,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -873,3 +979,6 @@ SceneRoots:
   - {fileID: 1651913949}
   - {fileID: 1052754627}
   - {fileID: 1416558566380313296}
+  - {fileID: 1153838520}
+  - {fileID: 666228113}
+  - {fileID: 174263946}

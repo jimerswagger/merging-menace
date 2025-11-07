@@ -16,7 +16,6 @@ public class SectionTrigger : MonoBehaviour
     void Start()
     {
         spawnNewRoadHere = GameObject.FindGameObjectWithTag("Spawn");
-        //spawnNewRoadPos = GameObject.FindGameObjectWithTag("SpawnPos");
     }
 
     void Update()

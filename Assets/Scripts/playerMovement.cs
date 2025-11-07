@@ -11,18 +11,11 @@ public class playerMovement : MonoBehaviour
 
     private PlayerInput playerInput;
 
-    private Move moveObject;
-
     public InputAction moveAction;
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
-        moveObject = GetComponent<Move>();
-        //road = GetComponent<Move>(); move component/script is on the road prefabs not the player, which is where THIS script is attached to
         moveAction = playerInput.actions.FindAction("Move");
     }
 

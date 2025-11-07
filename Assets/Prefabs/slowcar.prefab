@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 486509100023347861}
   - component: {fileID: 4943315762247713578}
   - component: {fileID: 5395543767110957114}
+  - component: {fileID: 2416470120601614659}
   m_Layer: 0
   m_Name: slowcar
   m_TagString: Untagged
@@ -139,3 +140,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.3445971
   m_Center: {x: 0.10370975, y: -0.2887554, z: 0}
+--- !u!114 &2416470120601614659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3438276688916871298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f18702984ab84180b9a639955dc3450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::slow
+  speed: 4
