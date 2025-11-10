@@ -225,7 +225,7 @@ Transform:
   m_GameObject: {fileID: 174263942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.118750095, y: -1.15, z: 45.568886}
+  m_LocalPosition: {x: 0.118750095, y: -1.15, z: 45.56889}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FixedFollower
   player: {fileID: 1651913949}
-  offset: {x: 0, y: 0, z: 50}
+  offset: {x: 0, y: 0, z: 86}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::slowSpawner
   enemycarprefab: {fileID: 3438276688916871298, guid: 5f286b36592c84355bf0444099a9ba43, type: 3}
-  enemyinterval: 2
+  enemyinterval: 2.25
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemycarprefab: {fileID: 6955489142747762041, guid: 363af458a161442b49eccea59d973cfe, type: 3}
-  enemyinterval: 3.5
+  enemyinterval: 0.1
 --- !u!1 &1507604589
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ Transform:
   m_GameObject: {fileID: 1507604589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 0.62941, z: 100}
+  m_LocalPosition: {x: -0.24, y: 0.62941, z: 400}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

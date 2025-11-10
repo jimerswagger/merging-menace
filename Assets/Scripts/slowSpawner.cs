@@ -5,6 +5,8 @@ using UnityEngine;
 public class slowSpawner : MonoBehaviour
 {
 
+    //code from this video: https://youtu.be/SELTWo1XZ0c?si=dHn0AcCkka6f1ebh
+
     [SerializeField] private GameObject enemycarprefab;
 
     [SerializeField] private float enemyinterval = 3.5f;
@@ -21,7 +23,7 @@ public class slowSpawner : MonoBehaviour
     private IEnumerator spawnEnemy (float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-6f, 6f), 1.5f, 60f), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7f), 1.5f, 60f), Quaternion.identity);
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 

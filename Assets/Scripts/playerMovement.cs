@@ -42,12 +42,12 @@ public class playerMovement : MonoBehaviour
 
         else if (direction.y > 0) //if moving up
         {
-            transform.position += new Vector3(direction.x, 0, direction.y - 0.5f) * speed * Time.deltaTime;
+            transform.position += new Vector3(direction.x, 0, direction.y + 0.5f) * speed * Time.deltaTime;
         }
 
-        else if (direction.y < 0) //if moving up, figure out left-down, left-right
+        else if (direction.y < 0) //if moving down
         {
-            transform.position += new Vector3(direction.x, 0, direction.y - 1) * speed * Time.deltaTime;
+            transform.position += new Vector3(direction.x, 0, direction.y - 0.5f) * speed * Time.deltaTime;
         }
 
         else
