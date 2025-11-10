@@ -18,7 +18,7 @@ public class fastSpawner : MonoBehaviour
     }
 
 
-    private IEnumerator spawnEnemy (float interval, GameObject enemy)
+    private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
         GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-6f, 6f), 1.5f, -40f), Quaternion.identity);

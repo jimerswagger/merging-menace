@@ -9,4 +9,12 @@ public class fast : MonoBehaviour
     {
         transform.position += new Vector3(0, 0, 5) * speed * Time.deltaTime;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Destroy"))
+        {
+            Destroy(transform.gameObject);
+        }
+    }
 }
