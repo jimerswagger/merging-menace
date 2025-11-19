@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 1651913952}
   - component: {fileID: 1651913953}
   - component: {fileID: 1651913954}
+  - component: {fileID: 1651913955}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -862,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc971cf097df54f838da1d1e0b7cb2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  highway: {fileID: 3438298115677433201, guid: ec985a8ab43154958a4e7a0eceebf8bd, type: 3}
+  highway: {fileID: 3438298115677433201, guid: 5ff9007a6f70348e08ec398545d0ae5a, type: 3}
 --- !u!54 &1651913951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -909,8 +910,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.3445971
-  m_Center: {x: 0.10370975, y: -0.2887554, z: 0}
+  m_Radius: 0.3546716
+  m_Center: {x: 0.030352328, y: -0.28875542, z: 0.014263139}
 --- !u!114 &1651913953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,6 +964,19 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &1651913955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651913945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0295d96aab03b4df88594ba8c53911fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  health: 5
 --- !u!1001 &1416558566380313296
 PrefabInstance:
   m_ObjectHideFlags: 0

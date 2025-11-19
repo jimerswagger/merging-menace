@@ -37,7 +37,7 @@ public class SectionTrigger : MonoBehaviour
         {
             // Generate Highway at Invisible Game Object's X and Y position + Current Z when attached to player
             Instantiate(highway, new Vector3(spawnNewRoadPos.transform.position.x, spawnNewRoadPos.transform.position.y, spawnNewRoadHere.transform.position.z), Quaternion.identity);
-            Debug.Log("Spawned at: " + spawnNewRoadHere.transform.position);
+            // Debug.Log("Spawned at: " + spawnNewRoadHere.transform.position);
 
         }
     }

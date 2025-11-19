@@ -19,7 +19,7 @@ public class playerMovement : MonoBehaviour
     {
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions.FindAction("Move");
-        initialPose = transform.rotation; //getting pose of player
+        initialPose = transform.rotation; //getting initial pose of player
     }
 
     // Update is called once per frame
