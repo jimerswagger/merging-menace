@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc971cf097df54f838da1d1e0b7cb2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  highway: {fileID: 3438298115677433201, guid: 5ff9007a6f70348e08ec398545d0ae5a, type: 3}
+  highway: {fileID: 3438298115677433201, guid: ec985a8ab43154958a4e7a0eceebf8bd, type: 3}
 --- !u!54 &1651913951
 Rigidbody:
   m_ObjectHideFlags: 0
