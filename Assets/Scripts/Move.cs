@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    //used to move the prefab being generated/instantiated towards the player (-z value)
 
     public static int accelerating_speed;
 

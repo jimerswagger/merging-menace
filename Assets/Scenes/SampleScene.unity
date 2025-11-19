@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemycarprefab: {fileID: 6955489142747762041, guid: 363af458a161442b49eccea59d973cfe, type: 3}
-  enemyinterval: 0.1
+  enemyinterval: 2.7
 --- !u!1 &1507604589
 GameObject:
   m_ObjectHideFlags: 0

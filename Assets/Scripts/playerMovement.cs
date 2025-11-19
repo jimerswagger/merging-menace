@@ -13,16 +13,24 @@ public class playerMovement : MonoBehaviour
 
     public InputAction moveAction;
 
+    private Quaternion initialPose;
+
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions.FindAction("Move");
+        initialPose = transform.rotation; //getting pose of player
     }
 
     // Update is called once per frame
     void Update()
     {
         MovePlayer();
+
+        if (transform.rotation != initialPose)
+        {
+            StartCoroutine(resetPose());
+        }
     }
 
     void MovePlayer()
@@ -54,5 +62,11 @@ public class playerMovement : MonoBehaviour
         {
             transform.position += new Vector3(direction.x, 0, direction.y) * speed * Time.deltaTime;
         }
+    }
+
+    IEnumerator resetPose()
+    {
+        yield return new WaitForSeconds(3);
+        transform.rotation = initialPose;
     }
 }
