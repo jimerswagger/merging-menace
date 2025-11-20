@@ -119,6 +119,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &34552331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34552333}
+  - component: {fileID: 34552332}
+  m_Layer: 0
+  m_Name: destroy-barrier-player
+  m_TagString: DestroyPlayer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &34552332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34552331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 126.4843, y: 107.88241, z: 0.4173198}
+  m_Center: {x: -34.282833, y: 15.128668, z: 0.29132026}
+--- !u!4 &34552333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34552331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5012555, y: 0.49698427, z: -0.49864113, w: 0.5030971}
+  m_LocalPosition: {x: -12.4, y: -11.9, z: -55.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 89.801, y: 2.772, z: -86.727}
 --- !u!1 &169628259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,6 +2026,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  gameOverScript: {fileID: 290183296}
 --- !u!114 &1651913955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,6 +2245,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1651913949}
   - {fileID: 1052754627}
+  - {fileID: 34552333}
   - {fileID: 1507604591}
   - {fileID: 1416558566380313296}
   - {fileID: 1153838520}

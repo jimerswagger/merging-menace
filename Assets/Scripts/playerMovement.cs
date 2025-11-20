@@ -15,6 +15,8 @@ public class playerMovement : MonoBehaviour
 
     private Quaternion initialPose;
 
+    public GameOverScript gameOverScript;
+
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -67,5 +69,14 @@ public class playerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         transform.rotation = initialPose;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("DestroyPlayer"))
+        {
+            gameOverScript.SetUp(1000);
+            Destroy(gameObject);
+        }
     }
 }
