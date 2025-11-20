@@ -22,7 +22,6 @@ public class playerMovement : MonoBehaviour
         initialPose = transform.rotation; //getting initial pose of player
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlayer();
@@ -66,7 +65,7 @@ public class playerMovement : MonoBehaviour
 
     IEnumerator resetPose()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         transform.rotation = initialPose;
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
 
+    public GameOverScript gameOverScript;
+
     public float health = 5.0f;
 
     private void OnCollisionEnter(Collision other)
@@ -19,6 +21,7 @@ public class Health : MonoBehaviour
     {
         if (health == 0.0f)
         {
+            gameOverScript.SetUp(1000);
             Destroy(gameObject);
         }
     }
