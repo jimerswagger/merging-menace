@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
+    //Code modified from this video: https://youtu.be/K4uOjb5p3Io?si=LMrAo3iwJf9ciGEd
 
     public TextMeshProUGUI pointsText;
 
