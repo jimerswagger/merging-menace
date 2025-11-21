@@ -67,7 +67,7 @@ public class playerMovement : MonoBehaviour
 
     IEnumerator resetPose()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3.0f);
         transform.rotation = initialPose;
     }
 

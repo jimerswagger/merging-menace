@@ -16,7 +16,7 @@ public class slowSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(spawnEnemy(enemyinterval, enemycarprefab));
+        StartCoroutine(spawnEnemy(Random.Range(enemyinterval-1.0f, enemyinterval+1.0f), enemycarprefab));
     }
 
 

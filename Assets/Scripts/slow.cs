@@ -4,7 +4,7 @@ using System.Collections;
 public class slow : MonoBehaviour
 {
 
-    public int speed = 4;
+    public float speed = 4.0f;
 
     private Quaternion initialPose;
 
@@ -25,7 +25,7 @@ public class slow : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Destroy"))
+        if (other.gameObject.CompareTag("DestroyPlayer"))
         {
             Destroy(transform.gameObject);
         }
@@ -33,7 +33,7 @@ public class slow : MonoBehaviour
 
     IEnumerator resetPose()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2.0f);
         transform.rotation = initialPose;
     }
 }

@@ -9,21 +9,21 @@ public class fastSpawner : MonoBehaviour
 
     [SerializeField] private GameObject enemycarprefab;
 
-    [SerializeField] private float enemyinterval = 3.5f;
+    [SerializeField] private float enemyinterval = 3.5f; //randomize the intervals
 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(spawnEnemy(enemyinterval, enemycarprefab));
+        StartCoroutine(spawnEnemy(Random.Range(enemyinterval-1.0f, enemyinterval+1.0f), enemycarprefab));
     }
 
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7f), 1.5f, -40f), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7f), 1.5f, -60f), Quaternion.identity);
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 
