@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 7f4f24cb528cb884a874e5266f87c831, type: 3}
       propertyPath: m_Name
-      value: slowBus
+      value: shootBus
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7f4f24cb528cb884a874e5266f87c831, type: 3}
       propertyPath: m_TagString

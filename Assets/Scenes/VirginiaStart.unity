@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FixedFollower
   player: {fileID: 109686341}
-  offset: {x: 0, y: 0, z: 85}
+  offset: {x: 0, y: 0, z: 85.85}
 --- !u!1 &193873413
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,52 +959,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &415687596
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 415687598}
-  - component: {fileID: 415687597}
-  m_Layer: 0
-  m_Name: slow-bus-spawner
-  m_TagString: EnemySpawner
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &415687597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415687596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4187613dc8a604d0fb3697ab52c6ae03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::slowSpawner
-  enemycarprefab: {fileID: 6001391908718385652, guid: 00a2ae4f1de8c4b5db37b8a0f6eded31, type: 3}
-  enemyinterval: 15
---- !u!4 &415687598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415687596}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666228111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemycarprefab: {fileID: 4866055428394041347, guid: 2a56eb460cc1c49d7b2887f34c3e0519, type: 3}
-  enemyinterval: 3.5
+  enemyinterval: 5
 --- !u!1 &1192732100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,7 +2109,6 @@ SceneRoots:
   - {fileID: 1153838520}
   - {fileID: 1648662092}
   - {fileID: 666228113}
-  - {fileID: 415687598}
   - {fileID: 174263946}
   - {fileID: 257303934}
   - {fileID: 169628263}

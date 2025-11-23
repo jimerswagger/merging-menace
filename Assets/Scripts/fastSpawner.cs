@@ -16,14 +16,14 @@ public class fastSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(spawnEnemy(Random.Range(enemyinterval-1.0f, enemyinterval+1.0f), enemycarprefab));
+        StartCoroutine(spawnEnemy(Random.Range(1.0f, enemyinterval+1.0f), enemycarprefab));
     }
 
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-7f, 7f), 1.5f, -60f), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-8f, 8f), 1.5f, -60f), Quaternion.identity);
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 
