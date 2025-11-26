@@ -177,6 +177,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4682548122878085933, guid: 92108969e4d984f33896f0518e1f3af2, type: 3}
   m_PrefabInstance: {fileID: 8091076916857526133}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &147008306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147008308}
+  - component: {fileID: 147008309}
+  m_Layer: 0
+  m_Name: shoot-left-bus-spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147008308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147008306}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.70195, y: 0.5, z: 7.10432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &147008309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147008306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37667bdbe6cb74ac681f82fc74455541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::shootLeftSpawnerFast
+  enemycarprefab: {fileID: 6001391908718385652, guid: 328f3ea92104b4519b85576df0c7d4d5, type: 3}
+  enemyinterval: 20
 --- !u!1 &169628259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemycarprefab: {fileID: 4866055428394041347, guid: 2a56eb460cc1c49d7b2887f34c3e0519, type: 3}
-  enemyinterval: 5
+  enemyinterval: 2
 --- !u!1 &1192732100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +1998,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844620658}
   m_CullTransparentMesh: 1
+--- !u!1 &2094910081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094910083}
+  - component: {fileID: 2094910082}
+  m_Layer: 0
+  m_Name: shoot-left-bus-spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2094910082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094910081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9f40a2688054524a4125e045c89a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::shootLeftSpawner
+  enemycarprefab: {fileID: 6001391908718385652, guid: 00a2ae4f1de8c4b5db37b8a0f6eded31, type: 3}
+  enemyinterval: 16
+--- !u!4 &2094910083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094910081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.70195, y: 0.5, z: 7.10432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1416558566380313296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2114,3 +2206,5 @@ SceneRoots:
   - {fileID: 169628263}
   - {fileID: 1259408081}
   - {fileID: 8091076916857526133}
+  - {fileID: 2094910083}
+  - {fileID: 147008308}
