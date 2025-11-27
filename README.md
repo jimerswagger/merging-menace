@@ -17,3 +17,17 @@ The player’s car is always accelerating, however, players can use the standard
 
 All to avoid the cars and Pentagon attacks.
 
+
+Assets Credits:
+
+Exclamation free icon by Fathema Khanom
+<a href="https://www.flaticon.com/free-icons/warning" title="warning icons">Warning icons created by Fathema Khanom - Flaticon</a>
+
+Critical free icon by Febrian Hidayat
+<a href="https://www.flaticon.com/free-icons/exclamation-mark" title="exclamation mark icons">Exclamation mark icons created by Febrian Hidayat - Flaticon</a>
+
+Simple Cars Pack by MyxerMan
+https://assetstore.unity.com/packages/3d/vehicles/land/simple-cars-pack-97669
+
+Straight road with white markings vector by Aleksandr Lysenko
+https://www.vecteezy.com/vector-art/25926948-straight-road-with-white-markings-vector-illustration-highway-road-icon
