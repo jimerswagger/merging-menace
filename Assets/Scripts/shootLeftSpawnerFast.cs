@@ -1,16 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class shootLeftSpawnerFast : MonoBehaviour
-{
+{ //make one for the right side too?
 
     //code from this video: https://youtu.be/SELTWo1XZ0c?si=dHn0AcCkka6f1ebh
 
     [SerializeField] private GameObject enemycarprefab;
 
     [SerializeField] private float enemyinterval = 3.5f;
-
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

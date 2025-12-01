@@ -13,6 +13,6 @@ public class FixedFollower : MonoBehaviour
     {
         // Keep position fixed relative to player but ignore rotation
         Vector3 targetPosition = player.position + offset;
-        transform.position = targetPosition;
+        transform.position = targetPosition; //script attached to SpawnPos object
     }
 }

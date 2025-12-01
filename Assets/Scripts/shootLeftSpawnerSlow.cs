@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shootLeftSpawner : MonoBehaviour
+public class shootLeftSpawnerSlow : MonoBehaviour
 {
 
     //code from this video: https://youtu.be/SELTWo1XZ0c?si=dHn0AcCkka6f1ebh
@@ -16,7 +16,7 @@ public class shootLeftSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(spawnEnemy(Random.Range(enemyinterval - 1.0f, enemyinterval+1.0f), enemycarprefab));
+        StartCoroutine(spawnEnemy(Random.Range(enemyinterval-1.0f, enemyinterval+1.0f), enemycarprefab));
     }
 
 
