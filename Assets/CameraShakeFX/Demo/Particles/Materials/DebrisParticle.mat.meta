@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 72815344e9e9c7446895e130936932d7
+timeCreated: 1471611776
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 146554
+  packageName: Camera Shake FX
+  packageVersion: 1.0
+  assetPath: Assets/CameraShakeFX/Demo/Particles/Materials/DebrisParticle.mat
+  uploadId: 557664

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7c4ab7c1aaec3a74b98fcd76c8eeb2d2
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 146554
+  packageName: Camera Shake FX
+  packageVersion: 1.0
+  assetPath: Assets/CameraShakeFX/Demo/Demo.unity
+  uploadId: 557664

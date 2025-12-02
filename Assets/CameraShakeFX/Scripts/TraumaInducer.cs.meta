@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 47b6b88d425f7234aae309cb9a973743
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 146554
+  packageName: Camera Shake FX
+  packageVersion: 1.0
+  assetPath: Assets/CameraShakeFX/Scripts/TraumaInducer.cs
+  uploadId: 557664

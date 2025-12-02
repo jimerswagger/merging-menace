@@ -31,3 +31,9 @@ https://assetstore.unity.com/packages/3d/vehicles/land/simple-cars-pack-97669
 
 Straight road with white markings vector by Aleksandr Lysenko
 https://www.vecteezy.com/vector-art/25926948-straight-road-with-white-markings-vector-illustration-highway-road-icon
+
+Rockets, Missiles & Bombs - Cartoon Low Poly Pack by BenjaTheMaker
+https://assetstore.unity.com/packages/3d/props/weapons/rockets-missiles-bombs-cartoon-low-poly-pack-73141
+
+Camera Shake FX by LeastSquares LLC
+https://assetstore.unity.com/packages/tools/particles-effects/camera-shake-fx-146554#reviews

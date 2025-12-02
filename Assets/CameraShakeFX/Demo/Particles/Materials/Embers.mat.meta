@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 776677ab3818fb249adaca05f4e04545
+timeCreated: 1471532950
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 146554
+  packageName: Camera Shake FX
+  packageVersion: 1.0
+  assetPath: Assets/CameraShakeFX/Demo/Particles/Materials/Embers.mat
+  uploadId: 557664
