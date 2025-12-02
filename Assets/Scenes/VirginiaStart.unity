@@ -1699,6 +1699,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474931073}
   m_CullTransparentMesh: 1
+--- !u!1 &1504109142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504109144}
+  - component: {fileID: 1504109143}
+  m_Layer: 0
+  m_Name: randomNumber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1504109143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504109142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3b1f7b2397d46ccb8361d3b32f1eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  number: 0
+  endBound: 5
+--- !u!4 &1504109144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504109142}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.55832, y: 1.7981, z: 1.56948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635547642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,54 +1924,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1720298945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1720298947}
-  - component: {fileID: 1720298946}
-  m_Layer: 0
-  m_Name: missileAttack (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1720298946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720298945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1e54578c8b94f288df6630ef8344c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  dangerHover: {fileID: 226116259132415221, guid: e2ec7f50528d94d72bf3612eba2f75d2, type: 3}
-  dangerAttack: {fileID: 5268461061670991324, guid: 9ae9835b7fa984bb7bc7fd49c7ca5152, type: 3}
-  missile: {fileID: 2835064136756973462, guid: f3bf80f8f86864742ad636fbf5eb0d06, type: 3}
-  missileInterval: 5
---- !u!4 &1720298947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720298945}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.91539, y: 0.5, z: 7.79804}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723023086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,7 +1971,8 @@ MonoBehaviour:
   dangerHover: {fileID: 226116259132415221, guid: e2ec7f50528d94d72bf3612eba2f75d2, type: 3}
   dangerAttack: {fileID: 5268461061670991324, guid: 9ae9835b7fa984bb7bc7fd49c7ca5152, type: 3}
   missile: {fileID: 2835064136756973462, guid: f3bf80f8f86864742ad636fbf5eb0d06, type: 3}
-  missileInterval: 3.5
+  missileEndBound: 5
+  rand: {fileID: 1504109143}
 --- !u!1 &1844620658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,4 +2320,4 @@ SceneRoots:
   - {fileID: 2094910083}
   - {fileID: 147008308}
   - {fileID: 1723023087}
-  - {fileID: 1720298947}
+  - {fileID: 1504109144}

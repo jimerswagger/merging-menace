@@ -8,12 +8,15 @@ public class missileSpawner : MonoBehaviour
 
     [SerializeField] private GameObject missile;
 
-    [SerializeField] private float missileInterval = 3.5f;
+    [SerializeField] private float missileEndBound = 5f;
+
+    [SerializeField] public randomNumberGenerator rand;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(spawnMissile(Random.Range(1.0f, missileInterval+1.0f), dangerHover, dangerAttack));
+        StartCoroutine(spawnMissile(Random.Range(1.0f, missileEndBound+1.0f), dangerHover, dangerAttack));
     }
 
     private IEnumerator spawnMissile (float interval, GameObject hover, GameObject attack)
@@ -26,12 +29,11 @@ public class missileSpawner : MonoBehaviour
 
         GameObject newDangerAttack = Instantiate(attack, newDangerHover.transform.position, Quaternion.Euler(90,0,0));
         Destroy(newDangerHover);
+        
         //Missile come in and destroy at newDangerAttack position
-
-        GameObject redMissile = Instantiate(missile, new Vector3(newDangerAttack.transform.position.x, newDangerAttack.transform.position.y + 20f, newDangerAttack.transform.position.z), Quaternion.Euler(180,0,0));
+        GameObject redMissile = Instantiate(missile, new Vector3(newDangerAttack.transform.position.x, newDangerAttack.transform.position.y + 22f, newDangerAttack.transform.position.z), Quaternion.Euler(180,0,0));
         Destroy(newDangerAttack, 1f);
-            
 
-        StartCoroutine(spawnMissile(interval, hover, attack));
+        StartCoroutine(spawnMissile(rand.GetRandomNumber(missileEndBound), hover, attack));
     }
 }
