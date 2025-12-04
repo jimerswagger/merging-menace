@@ -11,7 +11,6 @@ public class Health : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            // transform.Rotate(100.0f, 0.0f, 0.0f, Space.Self);
             health -= 1.0f;
             Debug.Log("Health: " + health);
         }
@@ -19,7 +18,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if (health == 0.0f)
+        if (health <= 0.0f)
         {
             gameOverScript.SetUp(1000);
             Destroy(gameObject);

@@ -13,7 +13,6 @@ public class missileSpawner : MonoBehaviour
     [SerializeField] public randomNumberGenerator rand;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine(spawnMissile(Random.Range(1.0f, missileEndBound+1.0f), dangerHover, dangerAttack));
@@ -21,7 +20,7 @@ public class missileSpawner : MonoBehaviour
 
     private IEnumerator spawnMissile (float interval, GameObject hover, GameObject attack)
     {
-        Debug.Log("Interval: " + interval);
+        //Debug.Log("Interval: " + interval);
         yield return new WaitForSeconds(interval);
         GameObject newDangerHover = Instantiate(hover, new Vector3(Random.Range(0f, 8f), 1f, Random.Range(0f, 20f)), Quaternion.Euler(90,0,0));
 

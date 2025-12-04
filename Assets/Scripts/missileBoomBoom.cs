@@ -12,6 +12,12 @@ public class missileBoomBoom : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        // if (collision.gameObject.CompareTag("DestroyPlayer"))
+        // {
+        //     Destroy(gameObject);
+        // }
+
         GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
 
         Destroy(exp, 1f);
