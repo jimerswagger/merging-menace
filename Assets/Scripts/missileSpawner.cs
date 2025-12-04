@@ -10,6 +10,8 @@ public class missileSpawner : MonoBehaviour
 
     [SerializeField] private float missileEndBound = 5f;
 
+    public float LRBounds = 8f;
+
     [SerializeField] public randomNumberGenerator rand;
 
 
@@ -22,7 +24,7 @@ public class missileSpawner : MonoBehaviour
     {
         //Debug.Log("Interval: " + interval);
         yield return new WaitForSeconds(interval);
-        GameObject newDangerHover = Instantiate(hover, new Vector3(Random.Range(0f, 8f), 1f, Random.Range(0f, 20f)), Quaternion.Euler(90,0,0));
+        GameObject newDangerHover = Instantiate(hover, new Vector3(Random.Range(-1*LRBounds, LRBounds), 1f, Random.Range(0f, 20f)), Quaternion.Euler(90,0,0));
 
         yield return new WaitForSeconds(3f);
 

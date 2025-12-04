@@ -11,6 +11,8 @@ TagManager:
   - EnemySpawner
   - Enemy
   - DestroyPlayer
+  - GoToLA
+  - GoToVA
   layers:
   - Default
   - TransparentFX

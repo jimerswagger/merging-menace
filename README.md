@@ -37,3 +37,6 @@ https://assetstore.unity.com/packages/3d/props/weapons/rockets-missiles-bombs-ca
 
 Camera Shake FX by LeastSquares LLC
 https://assetstore.unity.com/packages/tools/particles-effects/camera-shake-fx-146554#reviews
+
+Los Angeles Icon
+<a href="https://www.flaticon.com/free-icons/los-angeles" title="los angeles icons">Los angeles icons created by Chanut-is-Industries - Flaticon</a>
