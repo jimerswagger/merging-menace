@@ -25,12 +25,19 @@ public class GameOverScript : MonoBehaviour
 
     public void RestartButton()
     {
+        Invoke(nameof(HideGameOverScreen), 0.8f);
         SceneManager.LoadScene(currentScene.name);
     }
 
     public void MainMenuButton()
     {
+        Invoke(nameof(HideGameOverScreen), 0.8f);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void HideGameOverScreen()
+    {
+        gameObject.SetActive(false); //have gameover screen be off at start
     }
 
 }

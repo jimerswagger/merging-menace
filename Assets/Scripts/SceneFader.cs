@@ -46,12 +46,4 @@ public class SceneFader : MonoBehaviour
         }      
     }
 
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     if (collision.gameObject.CompareTag("GoToLA"))
-    //     {
-    //         FadeAndLoad("LosAngeles", 1);
-    //     }
-    // }
-
 }

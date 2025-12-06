@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45350000efde947ab8d9a9a556502f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Move
+  accelerating_speed: 0
   player: {fileID: 0}
 --- !u!54 &6343290660341818022
 Rigidbody:
@@ -128,7 +129,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5931622621046808351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

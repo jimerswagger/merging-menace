@@ -40,3 +40,9 @@ https://assetstore.unity.com/packages/tools/particles-effects/camera-shake-fx-14
 
 Los Angeles Icon
 <a href="https://www.flaticon.com/free-icons/los-angeles" title="los angeles icons">Los angeles icons created by Chanut-is-Industries - Flaticon</a>
+
+Highway Sign Maker by Brendon Strowe
+https://dki-os.github.io/SignMaker/
+
+Gunshot Sound
+https://www.myinstants.com/en/instant/real-gunshot/

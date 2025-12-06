@@ -17,6 +17,8 @@ public class fast : MonoBehaviour
     {
         transform.position += new Vector3(0, 0, 5) * speed * Time.deltaTime;
 
+        StartCoroutine(AddSpeed());
+
         if (transform.rotation != initialPose)
         {
             StartCoroutine(resetPose());
@@ -35,5 +37,12 @@ public class fast : MonoBehaviour
     {
         yield return new WaitForSeconds(2.0f);
         transform.rotation = initialPose;
+    }
+
+    IEnumerator AddSpeed()
+    {
+        yield return new WaitForSeconds(10f);
+        speed += GoFaster.SceneTransitionCount * .0005f + .001f;
+        Debug.Log("FastSpeed: " + speed);
     }
 }

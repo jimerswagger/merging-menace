@@ -15,12 +15,15 @@ public class slow : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(0, 0, -5) * speed * Time.deltaTime;
+        transform.position += speed * Time.deltaTime * new Vector3(0, 0, -5);
+
+        StartCoroutine(AddSpeed());
 
         if (transform.rotation != initialPose)
         {
             StartCoroutine(resetPose());
         }
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,5 +38,12 @@ public class slow : MonoBehaviour
     {
         yield return new WaitForSeconds(2.0f);
         transform.rotation = initialPose;
+    }
+
+    IEnumerator AddSpeed()
+    {
+        yield return new WaitForSeconds(10f);
+        speed += GoFaster.SceneTransitionCount * .0005f + .001f;
+        //Debug.Log("SlowSpeed: "+ speed);
     }
 }

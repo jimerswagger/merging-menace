@@ -172,6 +172,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1504109143}
     - target: {fileID: 2583620953267634855, guid: f1094bdae7c02400e927ea7395a6c21c, type: 3}
+      propertyPath: LRBounds
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583620953267634855, guid: f1094bdae7c02400e927ea7395a6c21c, type: 3}
       propertyPath: enemyEndBound
       value: 8
       objectReference: {fileID: 0}
@@ -1473,7 +1477,7 @@ PrefabInstance:
       objectReference: {fileID: 1504109143}
     - target: {fileID: 7994490375154731584, guid: edd47a551c9224098a7c280aedea0da1, type: 3}
       propertyPath: LRBounds
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1818,7 +1822,7 @@ PrefabInstance:
       objectReference: {fileID: 1504109143}
     - target: {fileID: 8286697191535567121, guid: 77d3f6419c83042209040d324b588171, type: 3}
       propertyPath: RBounds
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2014,6 +2018,10 @@ PrefabInstance:
       propertyPath: rand
       value: 
       objectReference: {fileID: 1504109143}
+    - target: {fileID: 7584074097286363822, guid: ce45c10889c60414bb88d6cc8a6869ec, type: 3}
+      propertyPath: LRBounds
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7584074097286363822, guid: ce45c10889c60414bb88d6cc8a6869ec, type: 3}
       propertyPath: enemyEndBound
       value: 8
@@ -2276,7 +2284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2441,6 +2449,10 @@ PrefabInstance:
       propertyPath: rand
       value: 
       objectReference: {fileID: 1504109143}
+    - target: {fileID: 62531914453939760, guid: 3a4b8d06e771b42e284aa317ddab6232, type: 3}
+      propertyPath: RBound
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 62531914453939760, guid: 3a4b8d06e771b42e284aa317ddab6232, type: 3}
       propertyPath: enemyEndBound
       value: 30
@@ -2620,6 +2632,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1504109143}
     - target: {fileID: 8286697191535567121, guid: 77d3f6419c83042209040d324b588171, type: 3}
+      propertyPath: RBounds
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286697191535567121, guid: 77d3f6419c83042209040d324b588171, type: 3}
       propertyPath: enemyEndBound
       value: 30
       objectReference: {fileID: 0}
@@ -2642,12 +2658,16 @@ PrefabInstance:
       objectReference: {fileID: 1504109143}
     - target: {fileID: 3131893251266892633, guid: c57ef9a25ce7b4520a1ff7e4a9d1bc68, type: 3}
       propertyPath: ToSpawn
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3131893251266892633, guid: c57ef9a25ce7b4520a1ff7e4a9d1bc68, type: 3}
       propertyPath: exitPrefab
       value: 
       objectReference: {fileID: 4723374726564800326, guid: fe27c5c6b364b4272b8f329f1a59dd2d, type: 3}
+    - target: {fileID: 3131893251266892633, guid: c57ef9a25ce7b4520a1ff7e4a9d1bc68, type: 3}
+      propertyPath: UpDownBound
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 3131893251266892633, guid: c57ef9a25ce7b4520a1ff7e4a9d1bc68, type: 3}
       propertyPath: exitInterval
       value: 50
@@ -2785,6 +2805,10 @@ PrefabInstance:
       propertyPath: m_AngularDamping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7525927631125833440, guid: 92108969e4d984f33896f0518e1f3af2, type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1920972422}
     - target: {fileID: 7525927631125833440, guid: 92108969e4d984f33896f0518e1f3af2, type: 3}
       propertyPath: gameOverScript
       value: 

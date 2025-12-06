@@ -17,6 +17,8 @@ public class playerMovement : MonoBehaviour
 
     public GameOverScript gameOverScript;
 
+    public SceneFader sceneFader;
+
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -76,7 +78,22 @@ public class playerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("DestroyPlayer"))
         {
             gameOverScript.SetUp(1000);
+            GoFaster.SceneTransitionCount = 0f;
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("GoToLA"))
+        {
+            GoFaster.SceneTransitionCount += 1f;
+            Debug.Log("Scenes Cleared: " + GoFaster.SceneTransitionCount);
+            sceneFader.FadeAndLoad("LosAngeles", 1);
+        }
+
+        if (other.gameObject.CompareTag("GoToVA"))
+        {
+            GoFaster.SceneTransitionCount += 1f;
+            Debug.Log("Scenes Cleared: " + GoFaster.SceneTransitionCount);
+            sceneFader.FadeAndLoad("VirginiaStart", 1);
         }
     }
 }
