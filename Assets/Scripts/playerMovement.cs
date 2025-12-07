@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 public class playerMovement : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class playerMovement : MonoBehaviour
     public GameOverScript gameOverScript;
 
     public SceneFader sceneFader;
+
+    public GameObject DisplayScoreText;
+    public GameObject DisplayHealth;
 
     void Start()
     {
@@ -77,8 +82,16 @@ public class playerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("DestroyPlayer"))
         {
-            gameOverScript.SetUp(1000);
+
+            DisplayScoreText.SetActive(false);
+            DisplayHealth.SetActive(false);
+
+            //int score = (int)(GoFaster.TimeLived * 100 + GoFaster.SceneTransitionCount * 300);
+
+            gameOverScript.SetUp(GoFaster.DisplayScore);
             GoFaster.SceneTransitionCount = 0f;
+            fast.speedToAdd = 0f;
+            Health.health = 5f;
             Destroy(gameObject);
         }
 
@@ -86,6 +99,7 @@ public class playerMovement : MonoBehaviour
         {
             GoFaster.SceneTransitionCount += 1f;
             Debug.Log("Scenes Cleared: " + GoFaster.SceneTransitionCount);
+            GoFaster.DisplayScore += 5000;
             sceneFader.FadeAndLoad("LosAngeles", 1);
         }
 
@@ -93,6 +107,7 @@ public class playerMovement : MonoBehaviour
         {
             GoFaster.SceneTransitionCount += 1f;
             Debug.Log("Scenes Cleared: " + GoFaster.SceneTransitionCount);
+            GoFaster.DisplayScore += 5000;
             sceneFader.FadeAndLoad("VirginiaStart", 1);
         }
     }

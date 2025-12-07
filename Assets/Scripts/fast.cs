@@ -6,6 +6,8 @@ public class fast : MonoBehaviour
 
     public float speed = 5.0f;
 
+    public static float speedToAdd;
+
     private Quaternion initialPose;
 
     void Start()
@@ -16,6 +18,8 @@ public class fast : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, 0, 5) * speed * Time.deltaTime;
+
+        speedToAdd += Time.deltaTime;
 
         StartCoroutine(AddSpeed());
 
@@ -41,8 +45,7 @@ public class fast : MonoBehaviour
 
     IEnumerator AddSpeed()
     {
-        yield return new WaitForSeconds(10f);
-        speed += GoFaster.SceneTransitionCount * .0005f + .001f;
-        Debug.Log("FastSpeed: " + speed);
+        yield return new WaitForSeconds(1f);
+        speed += speedToAdd * .00000005f + .001f;
     }
 }

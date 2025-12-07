@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
 
     public playerMovement player;
 
-    public GameObject playerObj;
+    private GameObject playerObj;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class Move : MonoBehaviour
     {
         transform.position += new Vector3(0, 0, accelerating_speed) * Time.deltaTime;
 
-        StartCoroutine(AddSpeed());
+        //StartCoroutine(AddSpeed());
 
     }
 
@@ -40,15 +40,9 @@ public class Move : MonoBehaviour
         }
     }
 
-    IEnumerator AddSpeed()
-    {
-        yield return new WaitForSeconds(10f);
-        accelerating_speed -= .05f;
-
-        //After player survives 2 cities, increase speed that road moves towards player
-        if (GoFaster.SceneTransitionCount > 2)
-        {
-            accelerating_speed -= GoFaster.SceneTransitionCount * 0.0001f;
-        }
-    }
+    // IEnumerator AddSpeed()
+    // {
+    //     yield return new WaitForSeconds(5f);
+    //     accelerating_speed -= fast.speedToAdd * .00005f;
+    // }
 }

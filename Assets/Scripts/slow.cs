@@ -42,8 +42,7 @@ public class slow : MonoBehaviour
 
     IEnumerator AddSpeed()
     {
-        yield return new WaitForSeconds(10f);
-        speed += GoFaster.SceneTransitionCount * .0005f + .001f;
-        //Debug.Log("SlowSpeed: "+ speed);
+        yield return new WaitForSeconds(5f);
+        speed += fast.speedToAdd * .0000005f + .001f;
     }
 }

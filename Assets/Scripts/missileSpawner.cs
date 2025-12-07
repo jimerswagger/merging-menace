@@ -35,13 +35,8 @@ public class missileSpawner : MonoBehaviour
         GameObject redMissile = Instantiate(missile, new Vector3(newDangerAttack.transform.position.x, newDangerAttack.transform.position.y + 22f, newDangerAttack.transform.position.z), Quaternion.Euler(180,0,0));
         Destroy(newDangerAttack, 1f);
 
-        if (GoFaster.SceneTransitionCount > 2)
-        {
-            StartCoroutine(spawnMissile(rand.GetRandomNumber(missileEndBound - (GoFaster.SceneTransitionCount * 0.5f)), hover, attack)); 
-        }
-
-        else {
-            StartCoroutine(spawnMissile(rand.GetRandomNumber(missileEndBound), hover, attack)); 
-        }
+    
+        StartCoroutine(spawnMissile(rand.GetRandomNumber(missileEndBound - fast.speedToAdd * .000005f), hover, attack)); 
+        
     }
 }

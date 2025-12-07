@@ -12,25 +12,34 @@ public class GameOverScript : MonoBehaviour
 
     public Scene currentScene;
 
+    public static bool GameOverActive = false;
+
+
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();
+        GameOverActive = false;
     }
 
     public void SetUp(int score)
     {
+        GameOverActive = true;
         gameObject.SetActive(true);
         pointsText.text = "Score: " + score.ToString();
     }
 
     public void RestartButton()
     {
+        GoFaster.DisplayScore = 0;
+        GameOverActive = false;
         Invoke(nameof(HideGameOverScreen), 0.8f);
         SceneManager.LoadScene(currentScene.name);
     }
 
     public void MainMenuButton()
     {
+        GoFaster.DisplayScore = 0;
+        GameOverActive = false;
         Invoke(nameof(HideGameOverScreen), 0.8f);
         SceneManager.LoadScene("MainMenu");
     }
