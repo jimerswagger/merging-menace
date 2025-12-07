@@ -8,21 +8,23 @@ public class missileBoomBoom : MonoBehaviour
     public GameObject explosion;
     public float explosionForce, radius;
 
+    //[SerializeField] private AudioClip missileBoomSound;
+
 
 
     private void OnCollisionEnter(Collision collision)
     {
-
-        // if (collision.gameObject.CompareTag("DestroyPlayer"))
-        // {
-        //     Destroy(gameObject);
-        // }
 
         GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
 
         Destroy(exp, 1f);
 
         knockBack();
+
+        //AudioSource.PlayClipAtPoint(missileBoomSound, transform.position);
+
+        //missileBoomSound.Play(); this doesn't work for some reason
+        
         Destroy(gameObject);
     }
 

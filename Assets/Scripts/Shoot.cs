@@ -14,6 +14,8 @@ public class Shoot : MonoBehaviour
     public Transform spawnPoint;
     public float enemySpeed;
 
+    //[SerializeField] private AudioClip gunShotSound;
+
     private bool isShootingActive = false;
     private float methodExecutionTimer = 0f;
     public float executionDuration = 5f;
@@ -58,6 +60,8 @@ public class Shoot : MonoBehaviour
         GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(-bulletRig.transform.right * enemySpeed); //shoot left
+        //AudioSource.PlayClipAtPoint(gunShotSound, transform.position);
+        //gunShotSound.Play(); this doesn't work for some reason
         Destroy(bulletObj, 5f);
     }
 

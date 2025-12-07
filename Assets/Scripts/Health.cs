@@ -30,6 +30,8 @@ public class Health : MonoBehaviour
         if (health <= 0.0f)
         {
 
+            Destroy(MusicManager.instance.gameObject);
+
             DisplayScoreText.SetActive(false);
             DisplayHealth.SetActive(false);
 

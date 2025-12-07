@@ -83,6 +83,8 @@ public class playerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("DestroyPlayer"))
         {
 
+            Destroy(MusicManager.instance.gameObject);
+
             DisplayScoreText.SetActive(false);
             DisplayHealth.SetActive(false);
 

@@ -46,3 +46,7 @@ https://dki-os.github.io/SignMaker/
 
 Gunshot Sound
 https://www.myinstants.com/en/instant/real-gunshot/
+
+Missile Explosion Sound
+https://www.myinstants.com/en/instant/bomb/
+

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 5d4ced11c514448e68bcf6abb68cfd25
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
+    path: Assets/Scenes/HowToPlay.unity
     guid: 5817e287bd9f244779bcd69e37449e1e
   - enabled: 1
     path: Assets/Scenes/VirginiaStart.unity
