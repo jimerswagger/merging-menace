@@ -1,4 +1,3 @@
-using Mono.Cecil.Cil;
 using UnityEngine;
 
 public class FixedFollower : MonoBehaviour
@@ -11,8 +10,9 @@ public class FixedFollower : MonoBehaviour
     void LateUpdate() //this means we call this method only after all other Update() methods are called
     // i.e. after the player moves
     {
-        // Keep position fixed relative to player but ignore rotation
+        // Keep position fixed relative to player and ignore rotation
         Vector3 targetPosition = player.position + offset;
-        transform.position = targetPosition; //script attached to SpawnPos object
+        transform.position = targetPosition; 
+        //this script is attached to SpawnPos object
     }
 }
