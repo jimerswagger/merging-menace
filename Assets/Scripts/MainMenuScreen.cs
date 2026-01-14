@@ -12,6 +12,6 @@ public class MainMenuScreen : MonoBehaviour
     public void SettingsButton()
     {
         Debug.Log("Settings Button Pressed :)");
-        SceneManager.LoadScene("Settings"); //does not exist yet
+        SceneManager.LoadScene("HowToPlay");
     }
 }
