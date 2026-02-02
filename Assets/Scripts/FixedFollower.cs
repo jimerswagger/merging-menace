@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FixedFollower : MonoBehaviour
 {
+    //this script will be DELETED after Los Angeles level implements the new highway spawning system
     
     [SerializeField] private Transform player;
     [SerializeField] private Vector3 offset = new Vector3(0, 0, 19f); 

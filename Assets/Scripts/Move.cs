@@ -7,7 +7,7 @@ public class Move : MonoBehaviour
 {
     //used to move the prefab being generated/instantiated towards the player (-z value)
 
-    public float accelerating_speed;
+    private float accelerating_speed;
 
     public playerMovement player;
 
